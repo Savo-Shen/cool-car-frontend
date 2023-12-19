@@ -1,0 +1,33 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start cool-car-frontend",
+            "request": "launch",
+            "runtimeArgs": [
+                "run",
+                "dev"
+            ],
+            "runtimeExecutable": "npm",
+            "type": "node",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome: 3000",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+    ],
+    // 复合启动多个配置
+    "compounds": [
+        {
+            "name": "Debug cool-car-frontend",
+            "configurations": ["Start cool-car-frontend", "Launch Chrome: 3000"],
+        }
+    ]
+}

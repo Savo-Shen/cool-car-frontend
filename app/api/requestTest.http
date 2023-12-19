@@ -1,0 +1,34 @@
+http://127.0.0.1:5003/api/information
+
+###
+http://127.0.0.1:5003/api/information
+
+###
+http://127.0.0.1:5003/api/control
+
+###
+POST http://127.0.0.1:5003/api/set_information
+Content-Type: application/json
+
+{
+    "Library": {
+        "is_arrived": true,
+        "is_target": false
+    },
+    "Classroom": {
+        "is_arrived": false,
+        "is_target": true
+    },
+    "实验楼": {
+        "is_arrived": false,
+        "is_target": false
+    },
+    "Canteen": {
+        "is_arrived": false,
+        "is_target": false
+    },
+    "Dormitory": {
+        "is_arrived": false,
+        "is_target": false
+    }
+}
