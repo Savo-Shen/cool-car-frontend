@@ -63,7 +63,7 @@ export default function Map({locationInformation}:{locationInformation: Location
                 }
             },
             point_location: {
-                x: "top-[20px]",
+                x: "top-[12px]",
                 y: "left-[310px]"
             },
         },

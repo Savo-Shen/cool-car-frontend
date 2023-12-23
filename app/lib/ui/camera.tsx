@@ -81,7 +81,7 @@ function CameraSource({pathName, cameraName}:{pathName: string, cameraName: stri
     // , 1);
 
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center border-blue-500 border">
             {/* <Image 
             src={cameraUrl} 
             alt="Car Camera"

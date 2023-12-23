@@ -23,12 +23,12 @@ export interface LocationInformation {
 
 export const defaultLocationInformation = {
     Library: {
-        is_arrived: true,
+        is_arrived: false,
         is_target: false,
     },
     Classroom: {
         is_arrived: false,
-        is_target: true,
+        is_target: false,
     },
     // 实验楼: {
     //     "is_arrived": false,

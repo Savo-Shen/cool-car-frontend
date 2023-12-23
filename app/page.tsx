@@ -15,7 +15,7 @@ export default function Home() {
     const [rootLocationInformation, setRootLocationInformation] = useState<LocationInformation>(defaultLocationInformation);
 
     return (
-        <main className='flex h-screen justify-around mt-4'>
+        <main className='flex h-full justify-around mt-4'>
             <Information setRootLocationInformation={setRootLocationInformation}/>
             <div className="flex flex-col">
                 <Map locationInformation={rootLocationInformation}/>

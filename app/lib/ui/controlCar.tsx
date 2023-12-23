@@ -160,13 +160,15 @@ function HandControl() {
     return (
         <div className='flex flex-col items-center'>
             <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2 w-full'>Hand Control</div>
-            <div className='flex flex-col items-center w-[200px] mt-8'>
-                <div className={'cursor-pointer w-0 h-0 mb-5 border-x-[40px] border-b-[40px] border-transparent ' + (handButton == 1 ? "border-b-blue-600" : "border-b-white")} onMouseDown={() => {setHandButton(1)}} onMouseUp={() => {setHandButton(0)}}></div>
-                <div className='flex flex-row justify-between w-full'>
-                    <div className={'cursor-pointer w-0 h-0 border-y-[40px] border-r-[40px] border-transparent ' + (handButton == 2 ? "border-r-blue-600" : "border-r-white")} onMouseDown={() => {setHandButton(2)}} onMouseUp={() => {setHandButton(0)}}></div>
-                    <div className={'cursor-pointer w-0 h-0 border-y-[40px] border-l-[40px] border-transparent ' + (handButton == 3 ? "border-l-blue-600" : "border-l-white")} onMouseDown={() => {setHandButton(3)}} onMouseUp={() => {setHandButton(0)}}></div>
+            <div className='bg-blue-500 mt-8 p-8 rounded-xl'>
+                <div className='flex flex-col items-center w-[200px] '>
+                    <div className={'cursor-pointer w-0 h-0 mb-5 border-x-[40px] border-b-[40px] border-transparent ' + (handButton == 1 ? "border-b-blue-600" : "border-b-white")} onMouseDown={() => {setHandButton(1)}} onMouseUp={() => {setHandButton(0)}}></div>
+                    <div className='flex flex-row justify-between w-full'>
+                        <div className={'cursor-pointer w-0 h-0 border-y-[40px] border-r-[40px] border-transparent ' + (handButton == 2 ? "border-r-blue-600" : "border-r-white")} onMouseDown={() => {setHandButton(2)}} onMouseUp={() => {setHandButton(0)}}></div>
+                        <div className={'cursor-pointer w-0 h-0 border-y-[40px] border-l-[40px] border-transparent ' + (handButton == 3 ? "border-l-blue-600" : "border-l-white")} onMouseDown={() => {setHandButton(3)}} onMouseUp={() => {setHandButton(0)}}></div>
+                    </div>
+                    <div className={'cursor-pointer w-0 h-0 mt-5 border-x-[40px] border-t-[40px] border-transparent ' + (handButton == 4 ? "border-t-blue-600" : "border-t-white")} onMouseDown={() => {setHandButton(4)}} onMouseUp={() => {setHandButton(0)}}></div>
                 </div>
-                <div className={'cursor-pointer w-0 h-0 mt-5 border-x-[40px] border-t-[40px] border-transparent ' + (handButton == 4 ? "border-t-blue-600" : "border-t-white")} onMouseDown={() => {setHandButton(4)}} onMouseUp={() => {setHandButton(0)}}></div>
             </div>
         </div>
     )
