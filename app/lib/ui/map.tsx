@@ -67,22 +67,22 @@ export default function Map({locationInformation}:{locationInformation: Location
                 y: "left-[310px]"
             },
         },
-        // {
-        //     name: "校门口",
-        //     state: () => {
-        //         if (locationInformation.Canteen.is_arrived) {
-        //             return 2
-        //         } else if (locationInformation.Canteen.is_target) {
-        //             return 1
-        //         } else {
-        //             return 0
-        //         }
-        //     },
-        //     point_location: {
-        //         x: "top-[285px]",
-        //         y: "left-[300px]"
-        //     },
-        // },
+        {
+            name: "校门口",
+            state: () => {
+                if (locationInformation.SchoolGate.is_arrived) {
+                    return 2
+                } else if (locationInformation.SchoolGate.is_target) {
+                    return 1
+                } else {
+                    return 0
+                }
+            },
+            point_location: {
+                x: "top-[-80px]",
+                y: "left-[140px]"
+            },
+        },
     ]
  
     const pointColorList:{
@@ -97,7 +97,7 @@ export default function Map({locationInformation}:{locationInformation: Location
 
     return (
         <div className="flex flex-col items-center">
-            <div className='font-semibold bg-blue-500 rounded-xl justify-center text-center items-center m-5 p-2 w-full'>Map</div>
+            <div className='font-semibold bg-blue-500 rounded-xl justify-center text-center items-center m-5 p-2 w-full'>校园地图</div>
             <div className="bg-[url('/cool-car-map.png')] bg-contain h-[420px] w-[460px] bg-no-repeat bg-center">
                 {
                     location_list.map((item, index) => {
@@ -110,11 +110,10 @@ export default function Map({locationInformation}:{locationInformation: Location
                                 }[item.state()]}></div>
                                 <div className="font-sans">{item.name}</div>
                             </div>
-                            
                         )
                     })
                 }
-            </div>            
+            </div>
         </div>
 
     )

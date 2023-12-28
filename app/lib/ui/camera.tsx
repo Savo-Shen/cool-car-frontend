@@ -30,7 +30,7 @@ export default function Camera() {
 
     return (
         <div className="flex flex-col">
-            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2'>Camera</div>
+            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2'>摄像头</div>
             <div className="flex items-center justify-center ">
             {
                     cameraPath.map((path, index) => (

@@ -104,7 +104,7 @@ function ControlCarArgument() {
 
     return (
         <div className="flex flex-col items-center mb-20">
-            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center m-5 p-2'>Control Car</div>
+            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2 w-full'>车辆控制</div>
             {
                 controlFrom.map((item, index) => (
                         <TFbutton key={index} title={item.title} value={item.value} valueNow={item.valueNow} changeFunction={item.setValue}/>
@@ -159,7 +159,7 @@ function HandControl() {
 
     return (
         <div className='flex flex-col items-center'>
-            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2 w-full'>Hand Control</div>
+            <div className='font-semibold bg-blue-500 rounded-xl justify-center items-center text-center m-5 p-2 w-full'>手动控制</div>
             <div className='bg-blue-500 mt-8 p-8 rounded-xl'>
                 <div className='flex flex-col items-center w-[200px] '>
                     <div className={'cursor-pointer w-0 h-0 mb-5 border-x-[40px] border-b-[40px] border-transparent ' + (handButton == 1 ? "border-b-blue-600" : "border-b-white")} onMouseDown={() => {setHandButton(1)}} onMouseUp={() => {setHandButton(0)}}></div>
