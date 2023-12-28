@@ -115,6 +115,5 @@ export default function Map({locationInformation}:{locationInformation: Location
                 }
             </div>
         </div>
-
     )
 }
