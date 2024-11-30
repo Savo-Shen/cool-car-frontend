@@ -1,11 +1,11 @@
-<center>
+<div align="center">
 
 # Cool Car Frontend
 
-</center>
-
 ![](https://img.shields.io/badge/Frontend-React-BE2EDD)
 ![](https://img.shields.io/badge/Backend-Flask-20B2AA)
+
+</div>
 
 ![海报](./public/海报.jpg)
 
