@@ -1,3 +1,6 @@
+// 校园智能小车前端
+// 作者: 沈逸帆
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -10,6 +13,7 @@ import Camera from './lib/ui/camera';
 import type { LocationInformation } from '@/app/utils/interface'
 import { defaultLocationInformation } from '@/app/utils/interface'
 
+// 主程序入口
 export default function Home() {
 
     const [rootLocationInformation, setRootLocationInformation] = useState<LocationInformation>(defaultLocationInformation);
@@ -20,7 +24,7 @@ export default function Home() {
             <div className="flex flex-col">
                 <Map locationInformation={rootLocationInformation}/>
                 
-                {/* BUG: 后端信息更新,前端获取新数据刷新后摄像头内容会暂停,需要手动刷新页面或切换摄像头内容方可恢复 */}
+
                 <Camera /> 
                 
             </div>
